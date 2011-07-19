@@ -1,0 +1,29 @@
+<h1>Listing miners</h1>
+
+<table>
+  <tr>
+    <th>Mintelid</th>
+    <th>Time</th>
+    <th>Minernum</th>
+    <th>Minername</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @miners.each do |miner| %>
+  <tr>
+    <td><%= miner.mintelid %></td>
+    <td><%= miner.time %></td>
+    <td><%= miner.minernum %></td>
+    <td><%= miner.minername %></td>
+    <td><%= link_to 'Show', miner %></td>
+    <td><%= link_to 'Edit', edit_miner_path(miner) %></td>
+    <td><%= link_to 'Destroy', miner, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Miner', new_miner_path %>

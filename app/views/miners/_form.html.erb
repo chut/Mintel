@@ -1,0 +1,33 @@
+<%= form_for(@miner) do |f| %>
+  <% if @miner.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@miner.errors.count, "error") %> prohibited this miner from being saved:</h2>
+
+      <ul>
+      <% @miner.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :mintelid %><br />
+    <%= f.text_field :mintelid %>
+  </div>
+  <div class="field">
+    <%= f.label :time %><br />
+    <%= f.datetime_select :time %>
+  </div>
+  <div class="field">
+    <%= f.label :minernum %><br />
+    <%= f.text_field :minernum %>
+  </div>
+  <div class="field">
+    <%= f.label :minername %><br />
+    <%= f.text_field :minername %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  mintelid: 1
+  time: 2011-07-02 16:12:20
+  minernum: 1
+  minername: MyString
+
+two:
+  mintelid: 1
+  time: 2011-07-02 16:12:20
+  minernum: 1
+  minername: MyString

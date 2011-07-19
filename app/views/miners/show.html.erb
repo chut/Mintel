@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Mintelid:</b>
+  <%= @miner.mintelid %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%= @miner.time %>
+</p>
+
+<p>
+  <b>Minernum:</b>
+  <%= @miner.minernum %>
+</p>
+
+<p>
+  <b>Minername:</b>
+  <%= @miner.minername %>
+</p>
+
+
+<%= link_to 'Edit', edit_miner_path(@miner) %> |
+<%= link_to 'Back', miners_path %>
